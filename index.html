@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spotify Clone Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="top-bar">
+        <div class="header">
+          <div class="song-navigation">
+            <div class="navigation-prev">
+              <img src="assets/arrow-left.svg" />
+            </div>
+            <div class="navigation-next">
+              <img src="assets/arrow-right.svg" />
+            </div>
+            <input class="search-bar" type="search" placeholder="Artist, songs or podcasts">
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="assets/Spotifylogo.png" />
+        </div>
+        <div class="categories-nav">
+          <div class="category-item category-item--selected">
+            <div class="icon">
+              <img src="assets/home.svg" />
+            </div>
+            <span class="text">Home</span>
+          </div>
+          <div class="category-item">
+            <div class="icon">
+              <img src="assets/search-white.svg" />
+            </div>
+            <span class="text">Search</span>
+          </div>
+          <div class="category-item">
+            <div class="icon">
+              <img src="assets/library.svg" />
+            </div>
+            <span class="text">Your Library</span>
+          </div>
+        </div>
+        <div class="playlists-nav">
+          <div class="category-item">
+            <div class="icon">
+              <img src="assets/Plus-small.svg" />
+            </div>
+            <span class="text">Create Playlist</span>
+          </div>
+          <div class="category-item">
+            <div class="icon">
+              <img src="assets/Heart.svg" />
+            </div>
+            <span class="text">Liked Songs</span>
+          </div>
+          <div class="category-item">
+            <div class="icon">
+              <img src="assets/media-podcast.svg" />
+            </div>
+            <span class="text">Your Episodes</span>
+          </div>
+        </div>
+        <div class="playlist-nav">
+          <div class="category-item">
+              <span class="install"><strong>&#x2913;</strong> Install App</span>
+          </div>
+        </div>
+      </div>
+      <div class="now-playing-bar">
+        <div class="function">
+          <div class="music">
+            <img src="assets/songPoster.jpeg" alt="" />
+            <div class="details">
+              <div class="name">Dreaming On</div>
+              <div class="artist">NEFFEX</div>
+            </div>
+            <div class="love">
+              <img src="assets/heart.png" alt="love" color />
+            </div>
+          </div>
+          <div class="playback">
+            <div class="upper">
+              <img
+                src="assets/shuffle.svg"
+                alt="shuffle"
+              />
+              <img
+                src="assets/skip-previous.svg"
+                alt="back"
+              />
+              <img class="play-button"
+                src="assets/play.svg"
+                alt="pause"
+                class="pause"
+              />
+              <img
+                src="assets/skip-forward.svg"
+                alt="forward"
+              />
+              <img
+                src="assets/repeat-all.svg"
+                alt="loop"
+              />
+            </div> 
+            <div class="lower">
+              <div class="text">0:00</div>
+              <div class="line"></div>
+              <div class="text">3:46</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-view">
+        <div class="header-placeholder"></div>
+        <section class="section quick-links">
+          <h3 class="head-line">Your top genres</h3>
+          <div class="container2">
+            <div class="block2">
+              <h2>Pop</h2>
+            </div>
+            <div class="block2">
+              <h2>Hip-Hop</h2>
+            </div>
+          </div>
+        </section>
+        <section class="section your-shows">
+          <div class="section-header">
+            <h3 class="head-line">Browse all</h3>
+          </div>
+          <div class="container">
+            <div class="block">
+              <h2>Podcasts</h2>
+            </div>
+            <div class="block">
+              <h2>Made For You</h2>
+            </div>
+            <div class="block">
+              <h2>Charts</h2>
+            </div>
+            <div class="block">
+              <h2>New Releases</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

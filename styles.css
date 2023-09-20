@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkgray;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: grid;
+  grid-template-areas: "nav-bar main-view" "now-playing-bar now-playing-bar";
+  font-size: 16px;
+}
+
+
+.top-bar {
+  grid-area: main-view;
+  height: 60px;
+  z-index: 2;
+}
+
+.song-navigation{
+  padding-top: 5px;
+  align-items: center;
+}
+
+.navigation-next{
+  margin-left: 25px; 
+}
+
+.nav-bar .text:hover{
+  opacity: 0.8;
+  font-size: large;
+}
+
+.search-bar{
+  margin-left: 15px;
+  display: flex;
+  margin-top: none;
+  width: 500px;
+  height: 50px;
+  outline: none;
+  padding: 8px 20px 8px 60px;
+  border-radius: #fff solid 4px;
+  font-size: 18;
+  border-radius: 25px;
+  background-position: 4% 50%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-image: url(assets/search.svg);
+  transition: 0.2s ease;
+}
+
+.search-bar:hover{
+  background-size: 23px;
+  width: 520px;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  width: 300px;
+  height: 100%;
+  min-height: 100%;
+  background-color: #000;
+  padding-top: 24px;
+}
+
+
+.nav-bar .logo {
+  display: grid;
+  margin-left: 30px;
+}
+
+.text{
+  filter: brightness(400%);
+  margin-left: 15px;
+  font-weight:500;
+}
+
+.playlists-nav .text{
+  padding-top: 10px;
+}
+
+.categories-nav {
+  color: #c4c4c4;
+  padding: 18px 12px;
+  margin-top: 20px;
+}
+
+.category-item {
+  padding: 5px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+}
+.category-item .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+.category-item .icon svg {
+  width: 24px;
+  height: 24px;
+}
+.playlists-nav {
+  color: #c4c4c4;
+  padding: 18px 12px;
+  margin-top: 20px;
+}
+
+.category-item .install{
+  margin-top: 99px;
+  color: white;
+  font-size: 16px;
+  margin-left: 9px;
+}
+
+.install:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.now-playing-bar {
+  grid-area: now-playing-bar;
+  background-color: #181818;
+  border-top: 1.4px solid #6d6868;
+  height: 70px;
+  z-index: 4;
+}
+.main-view {
+  grid-area: main-view;
+  background-color: #121212;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+.song-navigation {
+  display: flex;
+  flex-direction: row;
+}
+.song-navigation-prev,
+.song-navigation-next {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  margin-right: 16px;
+  cursor: not-allowed;
+}
+.song-navigation-prev svg,
+.song-navigation-next svg {
+  color: #fff;
+}
+
+
+.expand-arrow {
+  transform: rotateZ(180deg);
+  margin-right: 8px;
+}
+
+.header-placeholder {
+  height: 60px;
+  width: 100%;
+}
+
+
+.control .images .line{
+  height: 2px;
+}
+
+.play-button{
+  width: 80px;
+}
+
+.section {
+  padding: 16px 32px;
+  color: #fff;
+}
+
+
+.section-header span {
+  color: #686868;
+  font-size: 0.8em;
+}
+
+.function {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.function .music {
+  width: 20vw;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5vh;
+}
+.function .music img {
+  width: 7vh;
+  height: 7vh;
+  margin-right: 10vh;
+  border: 0px solid;
+  border-radius: 2vh;
+}
+
+.function .music .name {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin-left: 2vh;
+  margin-bottom: 0px;
+
+}
+
+.function .music .artist {
+  color: white;
+  margin-left: 2vh;
+  margin-top: 0px;
+  opacity: 60%;
+  margin-bottom: 2vh;
+}
+
+
+.function .music .love img {
+  background-color: transparent;
+  padding: 0px;
+  margin-left: 5vh;
+  margin-right: 2vh;
+  width: 2.5vh;
+  height: 2.5vh;
+}
+.function .playback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  width: 60vw;
+  height: 4vh;
+  background-color: transparent;
+}
+.function .playback .upper {
+  width: 50vw;
+  height: 6vh;
+  margin-top: 3vh;
+  margin-right: 47vh;;
+  margin-bottom: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.function .playback .upper img {
+  width: 5vh;
+  height: 5vh;
+  margin-left: 1vh;
+  align-items: baseline;
+}
+.function .playback .upper img.pause {
+  width: 4vh;
+  height: 4vh;
+}
+.function .playback .lower {
+  width: 50vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5vh;
+  color: white;
+}
+
+.function .playback .lower .line {
+  width: 50vh;
+  height: 4px;
+  background-color: white;
+  border: 0px 0px 0px 0px solid;
+  border-radius: 1vh;
+}
+.function .playback .lower .text {
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.block {
+  text-align: center;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  font-weight: 800px;
+  transition: 0.2s ease; 
+}
+
+.block:hover{ 
+  width: 310px;
+  height: 210px;
+  padding: 22px;
+}
+
+.block h2 {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  width: 250px;
+  font-size: 12x;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: none;
+}
+
+.block:nth-child(1) {
+  background-color: #27856a;
+}
+
+.block:nth-child(2) {
+  background-color: #1e3264;
+}
+
+.block:nth-child(3) {
+  background-color: #8c67ac;
+}
+
+.block:nth-child(4) {
+  background-color: #e8125c;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.block2 {
+  text-align: center;
+  padding: 20px;
+  height: 230px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px;
+  margin-bottom: none;
+  transition: 0.2s ease;
+}
+
+.block2:hover{
+  width: 410px;
+  padding: 22px;
+  height: 240px;
+}
+
+.block2 h2 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+.block2:nth-child(1) {
+  background-color: #8c67ac;
+}
+
+.block2:nth-child(2) {
+  background-color: #b95d06;
+}
+
+
+
+
